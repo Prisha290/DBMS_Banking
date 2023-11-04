@@ -1,0 +1,35 @@
+/* BankServices.css */
+
+.bank-services {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .hero-section {
+    /* background-image: url('https://thumbs.dreamstime.com/b/piggy-bank-logo-vector-icon-illustration-piggy-bank-logo-vector-icon-illustration-design-website-professional-savings-linear-cute-158137409.jpg'); */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBaZPqXnhAKS_TJIuLmJ1ZAUTSTaG9oIXWf1WTLfKg84fSdNaibAEuxLpEJ63H36b8hog&usqp=CAU');
+     background-size: cover;
+    color: #031c22;
+    padding: 100px 0;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  

@@ -263,11 +263,43 @@ db.query(q,[username,pass], (err, result) => {
     res.send({accountno:-1});
   }
   else
-  res.send(result[0]); // Sending the query result as a JSON response
+  res.json(result); // Sending the query result as a JSON response
 });
 
     // res.send({ message: 'Got' });
 });
+
+app.post("/adminlogin", (req,res)=>{
+  // console.log(req);
+  console.log("YAYY!");
+  console.log(req.body);
+  username=req.body.username;
+  pass=req.body.password;
+
+  console.log(username,pass)
+  const q="select * from register_admin where username=? and password=?";
+  
+
+out=[];
+  // const q = 'SELECT * FROM login';
+
+db.query(q,[username,pass], (err, result) => {
+if (err) {
+  console.error('Error executing MySQL query:', err);
+  res.status(500).json({ error: 'Invalid credentials.' });
+}
+console.log(result); // Logging the query result to the console
+if (result.length==0){
+  console.log("Not existing")
+  res.send({accountno:-1});
+}
+else
+res.send(result[0]); // Sending the query result as a JSON response
+});
+
+  // res.send({ message: 'Got' });
+});
+
 
 // app.get('/demo', async (req, res) => {
 //   try {

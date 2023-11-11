@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { useParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-import Dropdown from '../../DROPDOWN/Dropdown';
-import Navbar from '../../DROPDOWN/Navbar';
+import Dropdown from '../DROPDOWN/Dropdown';
+import AdminNavbar from '../DROPDOWN/AdminNavbar';
 // function Next({params}) {
 
 
@@ -25,7 +25,7 @@ function Accountcreated() {
     //     const data=params.state.data;
        console.log(22);
        console.log(data);
-        return (<div ><Navbar/>
+        return (<div ><AdminNavbar/>
         <br></br>
         <br></br>
         <h1 align='center'> Account successfully created!<br></br><br></br><br></br>

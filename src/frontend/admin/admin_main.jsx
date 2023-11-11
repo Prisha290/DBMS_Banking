@@ -1,8 +1,8 @@
 // import React from 'react';
-import AppBar from '../appBar';
+import AdminAppBar from '../admin_appbar';
 // import React, { useState } from 'react';
 import {TableComponent} from '../../render_json/render'
-import React, { useState } from 'react';
+import React, { useState ,useLocation} from 'react';
 import { Navigate, useNavigate,Link } from 'react-router-dom';
 // import './login.css'; // Import your CSS file
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,6 +11,9 @@ import './admin_main.css'
 
 
 const Admin_main = () => {
+  // const location = useLocation();
+  // const { data } = location.state || {};
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [jsondata,setjsondata]=useState([]);
@@ -92,7 +95,8 @@ const Admin_main = () => {
 
   return (
     <div>
-      <AppBar> </AppBar>
+      <AdminAppBar> </AdminAppBar>
+      {/* {data.employeeid} */}
     <div className="login-container">
       
       <div className="login-box">

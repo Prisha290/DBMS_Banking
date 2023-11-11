@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../../DROPDOWN/Navbar";
+import AdminNavbar from "../DROPDOWN/AdminNavbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Top3 = () => {
@@ -56,7 +56,7 @@ const Top3 = () => {
 
   return (
     <div>
-        <Navbar/>
+        <AdminNavbar/>
       {/* <div className="heading"><h1 className="t1">Your Transactions</h1></div> */}
       <div className="transaction-table-container">
         {renderTransactionTable()}

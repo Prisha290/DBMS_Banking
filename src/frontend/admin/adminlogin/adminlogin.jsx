@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Navigate, useNavigate,Link } from 'react-router-dom';
-import './login.css'; // Import your CSS file
-import AppBar from '../appBar'
-import Next from '../next'
+// Import your CSS file
+import AppBar from '../../appBar'
+
 // const cors = require('cors')
 
 
-const LoginComponent = () => {
+const AdminLoginComponent = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const LoginComponent = () => {
 
 
       try {
-        const response = await fetch('http://localhost:4000/logged_in', {
+        const response = await fetch('http://localhost:4000/adminlogin', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -29,16 +29,15 @@ const LoginComponent = () => {
       
         if (response.ok) {
           // Handle successful login, redirect or show success message
-          const data = await response.json(); // Await on response.json() to get the JSON data
+          const data = await response; // Await on response.json() to get the JSON data
           console.log(data);
-          console.log(data.accountno,data.username,data.password);
           if (data.accountno==-1)
           {
             navigate('/notexist');
           }
           else
           {
-          navigate('/next', { state: { data: data[0] } }); // Pass data to the next route
+          navigate('/admin_main'); // Pass data to the next route
           console.log('Login successful!');
           }
         } else {
@@ -87,5 +86,4 @@ const LoginComponent = () => {
   );
 };
 
-export default LoginComponent;
-
+export default AdminLoginComponent;

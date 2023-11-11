@@ -1,14 +1,14 @@
 export const navItems = [
   {
     id: 1,
-    title: "Log -in",
-    path: "../login",
+    title: "Sign-Out",
+    path: "../",
     cName: "nav-item",
   },
   {
     id: 3,
     title: "Admin",
-    path: "../admin",
+    path: "../admin_main",
     cName: "nav-item",
   },
   {

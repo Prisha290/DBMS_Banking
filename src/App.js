@@ -17,7 +17,7 @@ import ShowDetails from './frontend/admin/show_details/showdetails';
 import Unpaid from './frontend/admin/unpaid/unpaid';
 import Ask_account from './frontend/admin/show_details/ask_account';
 import Top3 from './frontend/admin/show_details/top3';
-
+import AdminLoginComponent from './frontend/admin/adminlogin/adminlogin';
 const App = () => {
   return (
     <div>
@@ -28,6 +28,7 @@ const App = () => {
         <Route exact path ="/notexist" element ={<NotExisting_login/>} />
         <Route exact path ="/email" element ={<EmailForm/>} />
         <Route exact path ="/admin_main" element ={<Admin_main/>} />
+        <Route exact path ="/admin" element ={<AdminLoginComponent/>} />
         <Route exact path ="/create_account" element ={<Create_acc/>} />
         <Route exact path ="/account_created" element ={<Accountcreated/>} />
         <Route exact path ="/ask_account" element ={<Ask_account/>} />

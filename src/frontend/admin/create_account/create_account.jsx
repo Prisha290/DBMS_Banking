@@ -2,8 +2,9 @@ import { Navigate, useNavigate,Link } from 'react-router-dom'
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import AppBar from '../../appBar';
+import AppBar from '../../admin_appbar';
 import "./createacc.css"
+import AdminAppBar from '../../admin_appbar';
 
 const CreateAcc = () => {
   const [formData, setFormData] = useState({
@@ -67,7 +68,7 @@ const CreateAcc = () => {
   return (
     
     <div>
-      <AppBar> </AppBar>
+      <AdminAppBar></AdminAppBar>
       <div class="d13"  >
       <input class="i2" type="text" name="First_Name" placeholder="First Name" onChange={handleInputChange} />
       <input class="i2" type="text" name="Last_Name" placeholder="Last Name" onChange={handleInputChange} />

@@ -8,13 +8,13 @@ export const navItems = [
   {
     id: 3,
     title: "Admin",
-    path: "../admin",
+    path: "../admin_main",
     cName: "nav-item",
   },
   {
     id: 4,
-    title: "Sign-Up",
-    path: "../signup",
+    title: "Settings",
+    path: "../settings",
     cName: "nav-item",
   },
 ];

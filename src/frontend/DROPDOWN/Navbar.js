@@ -12,7 +12,7 @@ function Navbar() {
     <>
       
       <nav className="navbar">
-        <Link to="../homepage" className="navbar-logo">
+        <Link to="/" className="navbar-logo">
             Eminent Bank
           
         </Link>

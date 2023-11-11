@@ -7,11 +7,12 @@
   }
   
   .hero-section {
+    background-image: url('https://images.moneycontrol.com/static-mcnews/2022/12/Mutual-Funds_Sensex_personal-finance-1-770x433.png');
     /* background-image: url('https://thumbs.dreamstime.com/b/piggy-bank-logo-vector-icon-illustration-piggy-bank-logo-vector-icon-illustration-design-website-professional-savings-linear-cute-158137409.jpg'); */
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBaZPqXnhAKS_TJIuLmJ1ZAUTSTaG9oIXWf1WTLfKg84fSdNaibAEuxLpEJ63H36b8hog&usqp=CAU');
-     background-size: cover;
-    color: #031c22;
-    padding: 100px 0;
+    /* background-image: url("https://www.shutterstock.com/image-photo/businessman-holding-word-banking-hand-260nw-1150180799.jpg"); */
+     background-size: 100%;
+    color: #bae5ef;
+    padding: 150px 0;
   }
   
   .service-card {

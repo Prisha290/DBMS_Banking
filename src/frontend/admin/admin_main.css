@@ -1,0 +1,119 @@
+/* 
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+
+.login-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.login-box button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #45a049;
+} 
+ */
+
+/* CSS */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(61, 5, 5, 0.1);
+  text-align: center;
+  width: 900px;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.b1 {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: rgb(255, 255, 255); /* Text color for dark mode */
+  background-color: #0c0b0b; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #484a4c;
+}
+
+.table-responsive {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.table {
+  width: 200%;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  text-align: center;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 600px) {
+  .login-box {
+    width: 80%;
+  }
+}
+
+
+.table-responsive {
+  margin-top: 30px;
+}
+
+.table {
+  width: 100%;
+  background-color: #333;
+  color: white;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for the app bar (assuming AppBar is a custom component) */
+.AppBar {
+  background-color: #838483;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Additional styles can be added or modified based on your preferences */

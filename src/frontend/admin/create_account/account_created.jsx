@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { useParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-import Dropdown from './DROPDOWN/Dropdown';
-import Navbar from './DROPDOWN/Navbar';
+import Dropdown from '../../DROPDOWN/Dropdown';
+import Navbar from '../../DROPDOWN/Navbar';
 // function Next({params}) {
 
 
@@ -17,7 +17,7 @@ import Navbar from './DROPDOWN/Navbar';
    
 // };
 
-function Next() {
+function Accountcreated() {
     const location = useLocation();
     const { data } = location.state || {};
     
@@ -26,18 +26,12 @@ function Next() {
        console.log(22);
        console.log(data);
         return (<div ><Navbar/>
-        <h1>Welcome Account:{data.AccountNo} Name:{data.first_Name} !</h1></div>);
+        <br></br>
+        <br></br>
+        <h1 align='center'> Account successfully created!<br></br><br></br><br></br>
+        Account Number:{data.accountno} <br></br><br></br> DebitCard Number: {data.debitcardno} </h1></div>);
    
 };
 
  
-export default Next;
-
-
-
-  
-  
-  
-  
-  
-  
+export default Accountcreated;

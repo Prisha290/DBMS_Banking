@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import AppBar from '../appBar'
+// import "./email.css"
 const EmailForm = () => {
   const [emailData, setEmailData] = useState({
     recipientEmail: '',
@@ -23,11 +24,11 @@ const EmailForm = () => {
   };
 
   return (
-    <div>
-      <input type="email" name="recipientEmail" placeholder="Recipient Email" onChange={handleInputChange} />
-      <input type="text" name="subject" placeholder="Subject" onChange={handleInputChange} />
-      <textarea name="message" placeholder="Message" onChange={handleInputChange}></textarea>
-      <button onClick={sendEmail}>Send Email</button>
+    <div class="one_div" >
+       <AppBar> </AppBar>
+      <input class ="i1" type="text" name="subject" placeholder="Subject" onChange={handleInputChange} />
+      <textarea class="ta"  name="message" placeholder="Message" onChange={handleInputChange}></textarea>
+      <button class="b1" onClick={sendEmail}>Send Email</button>
     </div>
   );
 };

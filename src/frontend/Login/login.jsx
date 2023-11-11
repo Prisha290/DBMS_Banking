@@ -14,36 +14,8 @@ const LoginComponent = () => {
   
     const handleSubmit = async (e,req,res) => {
       e.preventDefault();
-      console.log(username,password);
-      // try {
-      //   const response = await fetch('http://localhost:4000/logged_in', {
-      //     method: 'POST',
-      //     headers: {
-      //       'Content-Type': 'application/json',
-      //     },
-      //     body: JSON.stringify({"username":username,"password":password}),
-      //   });
-  
-      //   if (response.ok) {
-      //     // Handle successful login, redirect or show success message
-      //     console.log(response.json());
-      //     navigate({
-      //       pathname: '/next',
-      //       state: { data: response.json() },
-      //     })
-      //     console.log('Login successful!');
-      //   } else {
-      //     // Handle authentication error, show error message, etc.
-      //     console.error('Login failed');
-      //   }
-
-      // }
-     
-      
-      // catch (error) {
-      //   // Handle network errors or other issues
-      //   console.error('Error occurred:', error);
-      // }
+      console.log(username,password,"HANDLE");
+    
 
 
       try {
@@ -57,7 +29,7 @@ const LoginComponent = () => {
       
         if (response.ok) {
           // Handle successful login, redirect or show success message
-          const data = await response.json(); // Await on response.json() to get the JSON data
+          const data = await response; // Await on response.json() to get the JSON data
           console.log(data);
           if (data.accountno==-1)
           {
@@ -85,11 +57,11 @@ const LoginComponent = () => {
     <div className="login-container">
       
       <div className="login-box">
-        <h2>Eminent Bank</h2>
+       
         <form onSubmit={handleSubmit} type="post" >
           <div className="input-group">
-            <label>Username:</label>
-            <input
+            <label class="user">Username:</label>
+            <input class="i34"
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -97,15 +69,15 @@ const LoginComponent = () => {
             />
           </div>
           <div className="input-group">
-            <label>Password:</label>
-            <input
+            <label class="user">Password:</label>
+            <input class="i34"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
-          <button type="submit"> Login</button>
+          <button class="B23" type="submit"> Login</button>
           {/* <button type="submit"><Link to="/logged_in">Login </Link></button> */}
         </form>
       </div>
